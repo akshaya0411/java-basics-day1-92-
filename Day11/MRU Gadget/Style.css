@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(4, 4, 48);
+    color: white;
+    padding: 20px 20px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 27px;
+
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero{
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     padding: 40px 40px;
+     flex-wrap: wrap;
+     gap: 25px;
+     background-color:rgb(94, 141, 242);
+}
+.hero-img img{
+      width: 400px;
+      height: auto;
+}
+.hero-text h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.hero-text p{
+    margin-bottom: 30px;
+}
+.hero button{
+    padding: 15px 30px;
+    background-color: rgb(33, 33, 203);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.hero button:hover{
+    background-color: rgb(9, 9, 89);
+}
+.hero-text{
+    max-width: 400px;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(135, 177, 241);
+    padding: 40px 20px;
+    gap: 20px;
+    text-align: center;
+}
+.feature{
+    flex: 1 1 250px;
+    background-color: rgb(211, 255, 251);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.product-container{
+   display: flex;
+   justify-content:center;
+   flex-wrap:wrap ;
+   align-items: flex-start;
+   gap: 30px;   
+   margin-top: 20px;
+}
+ .product-gallery{
+    background-color: rgb(135, 164, 250);
+    padding: 40px 20px;
+    text-align: center;
+ }
+ .Product-gallery h2{
+    background-color: rgb(221, 221, 221);
+    color: black;
+   text-align: center;
+ }
+.Product-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(92, 90, 90);
+    transition: .3s ease;
+}
+.Product-card:hover{
+    transform: scale(1.1,1.1);
+}
+.last{
+    background-color: rgb(139, 139, 246);
+    text-align: center;
+}
+.last button{
+    background-color: white;
+    color: rgb(159, 159, 247);
+    
+}

@@ -1,0 +1,29 @@
+section{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+.form-group{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#v1,#v2{
+    display: block;
+    width:100%;
+
+}
+.form-group label{
+    font-weight: bold;
+}
+button{
+    background-color: rgb(119, 119, 239);
+    color: wheat;
+    border-radius: 5px;
+    padding: 10px;
+}

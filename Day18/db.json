@@ -1,0 +1,34 @@
+{
+  "employee": [
+    {
+      "empno": 101,
+      "name": "Rakesh",
+      "salary": 35000,
+      "id": "d055"
+    },
+    {
+      "empno": 103,
+      "name": "Arya",
+      "salary": 45000,
+      "id": "c259"
+    },
+    {
+      "empno": 104,
+      "name": "kiran",
+      "salary": 15000,
+      "id": "9ac7"
+    },
+    {
+      "empno": 105,
+      "name": "Sunil",
+      "salary": 32000,
+      "id": "84b6"
+    },
+    {
+      "name": "Akshaya",
+      "salary": 75000,
+      "id": "68e1"
+    }
+  ],
+  "student": []
+}

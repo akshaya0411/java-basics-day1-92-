@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the Greatest Number</title>
+</head>
+<body>
+  <h2>Find the Greatest Number</h2>
+  <form id="numberForm">
+    <label for="num1">Enter First Number:</label>
+    <input type="number" id="num1" required><br><br>
+
+    <label for="num2">Enter Second Number:</label>
+    <input type="number" id="num2" required><br><br>
+
+    <label for="num3">Enter Third Number:</label>
+    <input type="number" id="num3" required><br><br>
+
+    <button type="button" onclick="findGreatest()">Check Greatest</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script>
+    function findGreatest() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const num3 = parseFloat(document.getElementById('num3').value);
+
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+        document.getElementById('result').textContent = "Please enter valid numbers.";
+        return;
+      }
+      if(num1>num2 && num2>num3){
+        document.write(num1+"is largest");
+      }
+      else if(num2>num3){
+        document.write(num2+"is largest");
+      }
+      else{
+        document.write(num3+"is largest");
+      }
+
+    }
+  </script>
+</body>
+</html>

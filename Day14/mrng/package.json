@@ -1,0 +1,11 @@
+{
+  "name": "mrng",
+  "version": "1.0.0",
+  "description": "This project is created to try with javascript examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshaya",
+  "license": "ISC"
+}

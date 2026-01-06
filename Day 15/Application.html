@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-group">
+           <label for="">Data</label>
+           <input type="text" name="data" id="data">
+              </div>
+              <div id="result">
+
+       </div>
+        <div class="add">
+           <button id="add" onclick="addData()">Add</button>
+           <button id="largest" onclick="largest()">Largest</button>
+           <button id="smallest" onclick="smallest()">Smallest</button>
+       </div>
+    
+    </section>
+    <script>
+        var data=[];
+        function addData(){
+            let input=parseInt(document.getElementById("data").value);
+            if(isNaN(input)){
+                alert("please enter a valid number");
+                return 
+            }
+            data.push(input);
+            document.getElementById("result").innerHTML=data;
+        }
+        function largest(){
+            let large=data[0]
+            for(let x of data){
+                if(x>large){
+                    large=x;
+                }
+            }
+            document.getElementById("result").innerHTML="Largest: "+large;
+        }
+        function smallest(){
+            let small =data[0];
+             for(let x of data) {
+                if(x<small){
+                    small = x;
+                }
+            }
+            document.getElementById("result").innerHTML="Smallest: "+small;
+            }
+    </script>
+</body>
+</html>
